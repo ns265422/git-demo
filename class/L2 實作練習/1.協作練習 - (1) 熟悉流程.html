@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://lighthouse.alphacamp.co/lessons/227/units/1074 -->
+<html class="gr__lighthouse_alphacamp_co"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lighthouse</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="6bwLTPrZgxuNDp4M2/TgZcw+lE0YL3hmOdtyK8cQ0gQgO9GlVoL9s/XOlSA2AZoWL/UJqt21B/WrslKqxsTW4Q==">
+    <link rel="stylesheet" media="all" href="./1.協作練習 - (1) 熟悉流程_files/application-59541517b502bf71d6d7489d34c5edcca3cc1f71e0bde85f8f0dc848ba6b142e.css">
+    <script type="text/javascript" async="" src="./1.協作練習 - (1) 熟悉流程_files/analytics.js.下載"></script><script>
+var _rollbarConfig = {
+    accessToken: "cd09281e5c1f490ea5df2a7447db4127",
+    captureUncaught: true,
+    captureUnhandledRejections: true,
+    payload: {
+        environment: "production",
+        person: {
+          id: 443
+        }
+    }
+};
+// Rollbar Snippet
+!function(r){function e(n){if(o[n])return o[n].exports;var t=o[n]={exports:{},id:n,loaded:!1};return r[n].call(t.exports,t,t.exports,e),t.loaded=!0,t.exports}var o={};return e.m=r,e.c=o,e.p="",e(0)}([function(r,e,o){"use strict";var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.4.2/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";function n(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}function t(r,e){this.options=r,this._rollbarOldOnError=null;var o=d++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}function a(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var t=new i(e);return n(function(){e.captureUncaught&&(t._rollbarOldOnError=r.onerror,s.captureUncaughtExceptions(r,t,!0),s.wrapGlobals(r,t,!0)),e.captureUnhandledRejections&&s.captureUnhandledRejections(r,t,!0);var n=e.autoInstrument;return e.enabled!==!1&&(void 0===n||n===!0||"object"==typeof n&&n.network)&&r.addEventListener&&(r.addEventListener("load",t.captureLoad.bind(t)),r.addEventListener("DOMContentLoaded",t.captureDomContentLoaded.bind(t))),r[o]=t,t})()}}function l(r){return n(function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)})}var i,s=o(2),d=0,c=o(3),p=function(r,e){return new t(r,e)};i=c.curry?c.curry(p):c.bind(null,p),t.prototype.loadFull=function(r,e,o,t,a){var l=function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(e);break}}"function"==typeof a&&a(e)},i=!1,s=e.createElement("script"),d=e.getElementsByTagName("script")[0],c=d.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,o||(s.async=!0),s.onload=s.onreadystatechange=n(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{c.removeChild(s)}catch(r){}i=!0,l()}}),c.insertBefore(s,d)},t.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:i}},function(r,e){"use strict";function o(r,e,o){if(r){var t;"function"==typeof e._rollbarOldOnError?t=e._rollbarOldOnError:r.onerror&&!r.onerror.belongsToShim&&(t=r.onerror,e._rollbarOldOnError=t);var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};a.belongsToShim=o,r.onerror=a}}function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),e.handleUncaughtException.apply(e,n),o&&o.apply(r,n)}function t(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){t="[unhandledrejection] error getting `detail` from event"}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,e,o){if(r){var n,t,a="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<a.length;++n)t=a[n],r[t]&&r[t].prototype&&l(e,r[t].prototype,o)}}function l(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:o,captureUnhandledRejections:t,wrapGlobals:a}},function(r,e){"use strict";function o(r,e){this.impl=r(e,this),this.options=e,n(o.prototype)}function n(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}o.prototype._swapAndProcessMessages=function(r,e){this.impl=r(this.options);for(var o,n,t;o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=o},function(r,e){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){r=r||{};for(var o,n,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+</script>
+
+		<script src="./1.協作練習 - (1) 熟悉流程_files/application-07427a2d6478e9091a561812a49a992044d8bedf42cba9ace041ecf4dd18e26a.js.下載"></script><style>.cke{visibility:hidden;}</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+		<link rel="shortcut icon" type="image/x-icon" href="https://lighthouse.alphacamp.co/assets/favicon-c145f87a1029a8acbca5d57ab6e3f5c0f1382e303d02a9383ca9a1e0d7dac22a.ico">
+    <link href="./1.協作練習 - (1) 熟悉流程_files/icon" rel="stylesheet">
+    <link href="./1.協作練習 - (1) 熟悉流程_files/css" rel="stylesheet">
+  <script type="text/javascript" src="./1.協作練習 - (1) 熟悉流程_files/config-eedb2e33aa678986a337991432a6edaa74f8fbeb2e37ee14142e8da2a5a2fa24.js.下載"></script><link rel="stylesheet" type="text/css" href="./1.協作練習 - (1) 熟悉流程_files/editor.css"><script type="text/javascript" src="./1.協作練習 - (1) 熟悉流程_files/zh.js.下載"></script><script type="text/javascript" src="./1.協作練習 - (1) 熟悉流程_files/styles.js.下載"></script><script type="text/javascript" src="./1.協作練習 - (1) 熟悉流程_files/plugin.js.下載"></script><link rel="stylesheet" type="text/css" href="./1.協作練習 - (1) 熟悉流程_files/scayt.css"><link rel="stylesheet" type="text/css" href="./1.協作練習 - (1) 熟悉流程_files/dialog.css"><link rel="stylesheet" type="text/css" href="./1.協作練習 - (1) 熟悉流程_files/tableselection.css"><link rel="stylesheet" type="text/css" href="./1.協作練習 - (1) 熟悉流程_files/wsc.css"><style type="text/css">textarea.placeholder { color: #999; }</style><script type="text/javascript" src="./1.協作練習 - (1) 熟悉流程_files/highlight.pack.js.下載"></script><style type="text/css">@font-face {
+  font-family: 'rbicon';
+  src: url(chrome-extension://dipiagiiohfljcicegpgffpbnjmgjcnf/fonts/rbicon.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+</style></head>
+
+  <body data-gr-c-s-loaded="true">
+  	
+		<nav class="navbar acnavbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand acnavbar-logo" data-analytics="ga" data-ga-action="nav" data-ga-category="program_name" href="https://lighthouse.alphacamp.co/">
+				<div><img src="./1.協作練習 - (1) 熟悉流程_files/logo-c145f87a1029a8acbca5d57ab6e3f5c0f1382e303d02a9383ca9a1e0d7dac22a.png" alt="Logo"></div>大航道全端網路開發
+</a>			<button name="button" type="button" id="sidebarCollapse" class="btn btn-start navbar-btn" data-analytics="ga" data-ga-action="nav" data-ga-category="Menu" style="display:inline;"><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+				<i class="glyphicon glyphicon-option-vertical"></i>
+      </button>
+    </div>
+    <div id="bs-navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right acnavbar-menu">
+          <li>
+  					<div class="acnavbar-menu-option">
+  						<div class="search-bar">
+  							<form id="search-form" novalidate="novalidate" class="simple_form " action="https://lighthouse.alphacamp.co/searches" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+  								<input class="search-input" placeholder="搜尋關鍵字" data-analytics="ga" data-ga-action="nav" data-ga-category="search" type="search" name="q" id="q">
+  								<button name="button" type="reset" class="btn btn-default clear-btn">
+  									<i class="fa fa-remove"></i>
+</button></form>  						</div>
+  					</div>
+          </li>
+  				<li>
+  					<a data-analytics="ga" data-ga-action="nav" data-ga-category="announcements" href="https://lighthouse.alphacamp.co/announcements">
+  						<div class="acnavbar-menu-option" data-title="公告">
+  							
+  							<i class="fa fa-fw fa-bullhorn fa-lg"></i>
+  						</div>
+</a>          </li>
+          <li>
+            <a data-analytics="ga" data-ga-action="nav" data-ga-category="follow" href="https://lighthouse.alphacamp.co/user/subscriptions">
+  						<div class="acnavbar-menu-option" data-title="通知">
+  							
+  							<i class="material-icons">notifications_active</i>
+  						</div>
+</a>          </li>
+  				<li>
+            <a data-analytics="ga" data-ga-action="nav" data-ga-category="news_feed" href="https://lighthouse.alphacamp.co/feeds">
+  						<div class="acnavbar-menu-option" data-title="即時動態">
+  							<i class="fa fa-fw fa-newspaper-o fa-lg"></i>
+  						</div>
+</a>  				</li>
+
+  				<li>
+  					<a data-analytics="ga" data-ga-action="nav" data-ga-category="forum" href="https://lighthouse.alphacamp.co/sections/23">
+  						<div class="acnavbar-menu-option" data-title="討論區">
+  							<i class="fa fa-fw fa-comments-o fa-lg"></i>
+  						</div>
+</a>  				</li>
+
+  				<li class="divide"></li>
+
+  				<li class="acnavbar-name">
+  					<span>
+  						<p class="nav-user-name">EASON</p>
+  						<p class="nav-user-role">student</p>
+  					</span>
+          </li>
+  				<li class="dropdown acnavbar-dropdown">
+  					<a class="dropdown-toggle" data-toggle="dropdown" href="https://lighthouse.alphacamp.co/lessons/227/units/1074#">
+  						<img class="current_user_photo" alt="User avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_S__20054025.jpg" width="50" height="50">
+</a>  					<ul class="dropdown-menu">
+  						<li>
+  							<a data-analytics="ga" data-ga-action="nav" data-ga-category="profiles" href="https://lighthouse.alphacamp.co/user/profile/overview">
+  								<div class="acnavbar-menu-option">
+  									個人檔案
+  								</div>
+</a>  						</li>
+  						<li>
+  							<a rel="nofollow" data-method="DELETE" href="https://lighthouse.alphacamp.co/sessions">
+  								<div class="acnavbar-menu-option">
+  									登出
+  								</div>
+</a>  						</li>
+  					</ul>
+  				</li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="body-wrapper" %="">
+  		<div id="sidebar" class="acprogress-base active">
+	<div class="lesson">
+		<div class="sidebar-collapse-btn">
+			<button class="close-menu">關閉側欄 Close Menu ×</button>
+		</div>
+		<div class="sidebar-item-wrapper">
+			<h5 class="goal">我希望轉職成為網路開發者</h5>
+		</div>
+    
+  <div class="btn-wrapper switch-button active">
+    <div class="section-link-wrapper switch-button-link">
+  <a class="section-link" data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="back_to_section" data-ga-label="227" data-remote="true" href="https://lighthouse.alphacamp.co/sidebar/section?id=1074&amp;lesson_id=227&amp;model=Unit">
+    <i class="material-icons back-checklist">skip_previous</i>
+    S17 Git 團隊協作
+</a></div>
+
+  </div>
+
+	</div>
+  <div class="units-block">
+  <div class="unit-chart">
+    <div>
+      <a class="pre-lesson" data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="pre_lesson" data-ga-label="227" href="https://lighthouse.alphacamp.co/lessons/226/units/1068"><i class="fa fa-angle-double-left"></i></a>
+      <span class="lesson-name">L2 實作練習</span>
+      <a class="next-lesson" data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="next_lesson" data-ga-label="227" href="https://lighthouse.alphacamp.co/lessons/226/units/1068"><i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <p class="units-completed-progress">
+      <span class="units-completed-amount">
+        0
+      </span>
+      <span>
+        /3
+      </span>
+    </p>
+    <p>Units</p>
+  </div>
+
+  <ul class="item-list unit-lists active">
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <div class="unit-flag-wrapper">
+            <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1074/user_unit_flags">
+              <i class="material-icons unit-flag" data-unit-id="1074">turned_in_not</i>
+</a>          </div>
+            <i class="fa fa-flask"></i>
+          <span disabled="disabled" data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="unit" data-ga-label="1074" class="unit-now" aria-current="page">
+            協作練習 - (1) 熟悉流程
+            <span class="units-estimated-time"> 大約 1 小時 </span>
+</span>          <div class="item-finished">
+              <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1074/user_unit_histories">
+                <i class="unit-history fa fa-square-o" data-unit-id="1074"></i>
+</a>          </div>
+        </div>
+      </li>
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <div class="unit-flag-wrapper">
+            <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1075/user_unit_flags">
+              <i class="material-icons unit-flag" data-unit-id="1075">turned_in_not</i>
+</a>          </div>
+            <i class="fa fa-flask"></i>
+          <a data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="unit" data-ga-label="1075" href="https://lighthouse.alphacamp.co/lessons/227/units/1075">
+            協作練習 - (2) 解決合併衝突
+            <span class="units-estimated-time"> 大約 1 小時 </span>
+</a>          <div class="item-finished">
+              <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1075/user_unit_histories">
+                <i class="unit-history fa fa-square-o" data-unit-id="1075"></i>
+</a>          </div>
+        </div>
+      </li>
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <div class="unit-flag-wrapper">
+            <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1079/user_unit_flags">
+              <i class="material-icons unit-flag" data-unit-id="1079">turned_in_not</i>
+</a>          </div>
+            <i class="fa fa-file-text-o"></i>
+          <a data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="unit" data-ga-label="1079" href="https://lighthouse.alphacamp.co/lessons/227/units/1079">
+            作業卡關問與答
+            <span class="units-estimated-time">  </span>
+</a>          <div class="item-finished">
+              <a data-remote="true" rel="nofollow" data-method="patch" href="https://lighthouse.alphacamp.co/units/1079/user_unit_histories">
+                <i class="unit-history fa fa-square-o" data-unit-id="1079"></i>
+</a>          </div>
+        </div>
+      </li>
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <i class="fa fa-pencil"></i>
+          <a data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="assignment" data-ga-label="227" href="https://lighthouse.alphacamp.co/assignments/227">
+            作業
+            <span class="units-estimated-time">  </span>
+</a>        </div>
+      </li>
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <i class="fa fa-th-large"></i>
+          <a data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="gallery" data-ga-label="227" href="https://lighthouse.alphacamp.co/lessons/227/galleries">作品集</a>
+        </div>
+      </li>
+      <li class="is-zero">
+        <div class="sidebar-item-wrapper">
+          <i class="fa fa-clipboard"></i>
+          <a data-analytics="ga" data-ga-action="unit-sidebar" data-ga-category="assignment" data-ga-label="227" href="https://lighthouse.alphacamp.co/assignments/227/peer_reviews">學員互評</a>
+        </div>
+      </li>
+  </ul>
+</div>
+
+</div>
+
+<div class="wrapper">
+	<div class="append-width active"></div>
+	<div class="container-fluid unit-content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content-wrapper">
+					<h2 class="content-heading">
+						協作練習 - (1) 熟悉流程
+						<small class="updated-at">
+							<span class="label label-info">實作</span>
+						</small>
+						<small class="pull-right updated-at">
+							Last updated: 2018-06-19 21:30
+						</small>
+					</h2>
+					<div class="unit markdown-content">
+						<blockquote>
+<p><strong>學習目標與成果</strong><br>
+・能運用 branch 分工，透過遠端儲存庫分享程式碼，並順利合併多人協作的程式碼<br>
+・能夠使用 GitHub 的 Pull Request (PR) 功能，發出通知給共同開發者</p>
+</blockquote>
+
+<p></p>
+<hr style="border-top: 2px solid #eee">
+
+<div style="position: relative;width:100%;height:0;padding-bottom: 56.25%;">  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="./1.協作練習 - (1) 熟悉流程_files/ufkiGyLoggY.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<div style="background: #ccc; padding: 15px; border-radius: 10px"> 
+  你可以在<a href="https://docs.google.com/presentation/d/e/2PACX-1vRJUwBf17dj2rEh1EucN70wOdzZosHsLolsOx7exB4_4_6XwAg53F7da37xz7n8Ndi8E-ysUG9mzAwG/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">這裡</a>看到影片中使用的投影片。
+</div>
+
+<p>在這個單元裡，我們將會運用在上個階段學到的指令，在多人協作的情境下來練習。</p>
+
+<p>本單元設計的是「兩人協作」的練習，會需要有兩個角色：</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">角色</th>
+<th style="text-align: left">職責</th>
+<th style="text-align: left">示範人物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">Lead developer</td>
+<td style="text-align: left">建立專案與基礎架構<br>審查 Collaborator 的 Commit，決定是否能合併到 master</td>
+<td style="text-align: left">ellenlee</td>
+</tr>
+<tr>
+<td style="text-align: left">Collaborator</td>
+<td style="text-align: left">依分派到的 User story，在 branch 上實作<br>完成後發送 PR (pull request) 給 Lead developer</td>
+<td style="text-align: left">kevinwu</td>
+</tr>
+</tbody>
+</table>
+
+<p>團隊成員請輪流扮演 Lead developer 和 Collaborator。</p>
+
+<p>在這個練習裡，每個同學都需要有 GitHub 帳號。</p>
+
+<p><br></p>
+
+<h3>實作目標</h3>
+
+<p>這是實作練習要呈現的最後結果畫面——在首頁上列出所有的 User 名稱：</p>
+
+<div style="width:100%"> <img style="max-width:500px;width:100%;" src="./1.協作練習 - (1) 熟悉流程_files/1.png">
+</div>
+
+<p><br></p>
+
+<h3>分工與流程</h3>
+
+<p>請採用以下分工，來完成上述實作目標：</p>
+
+<ul>
+<li>Lead developer - 完成專案基礎架構，包括 User Model 的資料模型與種子資料。</li>
+<li>Collaborator - 完成「首頁」的路由、Controller action 和前端樣板。</li>
+</ul>
+
+<p>協作步驟如下：</p>
+
+<div style="width:100%"> <img style="max-width:800px;width:100%;" src="./1.協作練習 - (1) 熟悉流程_files/2.png">
+</div>
+
+<p><br></p>
+
+<h3>Lead developer｜準備專案與儲存庫</h3>
+
+<p>請扮演 Lead developer 的同學：</p>
+
+<ul>
+<li>建立本地的 Rails 專案 - <code>rails new git-exercise</code>
+</li>
+<li>在 GitHub 上開設一個遠端儲存庫</li>
+<li>為本地專案設定遠端 - <code>git remote add origin &lt;url&gt;</code>
+</li>
+<li>在 GitHub 上設定協作者 (在專案裡的 Setting &gt; Collaborators &amp; teams 做設定，帳號名稱可以在每個人的 GitHub 網頁上找到) </li>
+</ul>
+
+<p><br></p>
+
+<h3>Lead developer｜完成基礎架構，並 push 到遠端</h3>
+
+<p>請扮演 Lead developer 的同學，完成以下基礎架構：</p>
+
+<ul>
+<li>建立 User Model</li>
+<li>設定 User 屬性：role, name</li>
+<li>加入種子資料</li>
+<li>更新 <strong>README.md</strong>（說明如何 clone 並初始化你的專案）</li>
+</ul>
+
+<p>由於本章節的教學目標不包括 Rails 實作，在這裡不會特別說明 Rails 部分的實作，以下為各節點的參考程式碼，期許可以幫助你順利完成必要的實作步驟：</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Commit</th>
+<th style="text-align: left">GitHub Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">init project</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/80c9eca0779819fda945ba316728bf835bf10db0" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+<tr>
+<td style="text-align: left">create user model</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/9fdd71a702a886a3393ef0cab8ec6986ffaa4798" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+<tr>
+<td style="text-align: left">add user seed data</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/1efb964f502c741fb555e637d647fd3d8f55e89e" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+<tr>
+<td style="text-align: left">update README.md</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/45bbfd70366aa36fb39f5857bd734ad856c00b38" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>完成專案基礎架構後，請使用 <code>git push origin master</code> 將最新的專案進度推送到遠端，並在 GitHub 頁面上確認遠端已出現專案的最新進度。</p>
+
+<p>接下來就換手給擔任 Collaborator 的同學。</p>
+
+<p><br></p>
+
+<h3>Collaborator｜從遠端 clone 專案，並完成初始化</h3>
+
+<p>擔任 Collaborator 的同學要接手開發 Lead 架構好的專案，因此需要使用 <code>git clone</code> 指令。</p>
+
+<p>下載好專案程式碼之後，別忘了需要進行初始化，理論上應該根據 Lead Developer 提供的 <strong>README.md</strong> 文件來操作，通常包括以下程序：</p>
+
+<ul>
+<li>
+<code>bundle install</code> - 載入相依的套件</li>
+<li>
+<code>rails db:migrate</code> - 載入資料庫設定</li>
+<li>
+<code>rails db:seed</code> - 載入種子資料</li>
+</ul>
+
+<p><br></p>
+
+<h3>Collaborator｜在分支上完成指定功能「在首頁列出所有 User 名稱」</h3>
+
+<p>擔任 Collaborator 的同學要負責實作「在首頁列出所有 User 名稱」這項功能，請注意，所有的工作需要在分支上進行。請你：</p>
+
+<ul>
+  <li>建立新分支 - <code>git branch feature/user_index</code>
+</li>
+  <li>切換到分支上 - <code>git checkout feature/user_index</code>
+</li>
+  <li>開始實作功能，包括：
+    <ul>
+      <li>設定首頁路由</li>
+      <li>新增 UsersController</li>
+      <li>實作首頁 Action 與 Template，讓使用者能在首頁看見所有的 User 名稱</li>
+    </ul>
+</li>
+</ul>
+
+<p>以下為參考程式碼：</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Commit</th>
+<th style="text-align: left">GitHub Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">set root to user index</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/ede3ba29cfd6afeb222e070ec3b92d817a81845c" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+<tr>
+<td style="text-align: left">rails generate controller users</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/fba7be0ab038f28e31aa5f2802d68770276952d3" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+<tr>
+<td style="text-align: left">add user index page</td>
+<td style="text-align: left"><a href="https://github.com/ALPHACamp/git-exercise/commit/acf4bed324f7f347111281da65b1645ba7dff330" rel="nofollow" target="_blank">LINK</a></td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<h3>Collaborator｜push 工作成果，發出 Pull Request 給 Lead</h3>
+
+<ul>
+<li>推送分支到遠端 - <code>git push origin feature/user_index</code>
+</li>
+<li>在 GitHub 上發出 Pull Request (詳見影片約 4 分鐘處)</li>
+</ul>
+
+<p><br></p>
+
+<h3>Lead developer｜在本地進行 pull，再 push 合併後的 master 到遠端</h3>
+
+<ul>
+<li>收到 Pull request 信件，得知專案有新的進度</li>
+<li>拉取遠端分支 - <code>git pull origin feature/user_index</code>
+</li>
+<li>由於沒有衝突，分支會自動合併到 master</li>
+<li>將更新後的 master 再推送至遠端 - <code>git push origin master</code>
+</li>
+</ul>
+
+<p><br></p>
+
+<h3>Collaborator｜pull 遠端 master，將本地 master 更新到最新進度</h3>
+
+<ul>
+<li>得知 master 有更新</li>
+<li>切換回 master - <code>git checkout master</code>
+</li>
+<li>拉取最新進度 - <code>git pull origin master</code>
+</li>
+</ul>
+
+          </div>
+				</div>
+			</div>
+		</div>
+    <div class="js-detect-scroll-bottom"></div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content-wrapper">
+					<div class="comments-wrapper">
+						<h4 class="content-heading"><i class="fa fa-comments"></i>
+							討論區
+						</h4>
+						<form class="simple_form comment-form" novalidate="novalidate" id="new_comment" data-remote="true" enctype="multipart/form-data" action="https://lighthouse.alphacamp.co/units/1074/comment" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="6bwLTPrZgxuNDp4M2/TgZcw+lE0YL3hmOdtyK8cQ0gQgO9GlVoL9s/XOlSA2AZoWL/UJqt21B/WrslKqxsTW4Q==">
+							<div class="row">
+								<div class="col-xs-3">
+	<div class="form-group select optional comment_thread"><select class="form-control select optional" name="comment[thread]" id="comment_thread"><option value="ask">舉手發問</option>
+<option value="share">學習分享</option>
+<option value="ask_manager">說給 AC 聽</option></select></div>
+</div>
+<div class="col-xs-9">
+	<div class="form-group string optional comment_title"><input class="form-control string optional" placeholder="討論串主題" type="text" name="comment[title]" id="comment_title"></div>
+</div>
+<div class="col-xs-12">
+	<div class="form-group text required comment_content no-margin" aria-required="true"><textarea class="form-control text required" id="comment_content" placeholder="&lt;p&gt;如果是練習卡關，請提供&lt;/p&gt; &lt;p&gt;1.你正準備做什麼功能？&lt;/p&gt; &lt;p&gt;2.剛剛完成哪個功能？&lt;/p&gt; &lt;p&gt;3.你剛剛做了什麼步驟？如：ＸＸ檔案寫了或改了ＸＸＸ程式碼。&lt;/p&gt; &lt;p&gt;4.錯誤訊息是什麼？(畫面截圖)&lt;/p&gt;" name="comment[content]" aria-required="true" style="visibility: hidden; display: none;"></textarea><div id="cke_comment_content" class="cke_1 cke cke_reset cke_chrome cke_editor_comment_content cke_ltr cke_browser_webkit" dir="ltr" lang="zh" role="application" aria-labelledby="cke_comment_content_arialbl"><span id="cke_comment_content_arialbl" class="cke_voice_label">RTF 編輯器, comment_content</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; user-select: none;"><span id="cke_11" class="cke_voice_label">編輯器工具列</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_11" onmousedown="return false;"><span id="cke_12" class="cke_toolbar" aria-labelledby="cke_12_label" role="toolbar"><span id="cke_12_label" class="cke_voice_label">undo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_13" class="cke_button cke_button__undo cke_button_disabled " href="javascript:void(&#39;復原&#39;)" title="復原 (Ctrl+Z)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-describedby="cke_13_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(2,event);" onfocus="return CKEDITOR.tools.callFunction(3,event);" onclick="CKEDITOR.tools.callFunction(4,this);return false;"><span class="cke_button_icon cke_button__undo_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_13_label" class="cke_button_label cke_button__undo_label" aria-hidden="false">復原</span><span id="cke_13_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+Z</span></a><a id="cke_14" class="cke_button cke_button__redo cke_button_disabled " href="javascript:void(&#39;取消復原&#39;)" title="取消復原 (Ctrl+Y)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-describedby="cke_14_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(5,event);" onfocus="return CKEDITOR.tools.callFunction(6,event);" onclick="CKEDITOR.tools.callFunction(7,this);return false;"><span class="cke_button_icon cke_button__redo_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -960px;background-size:auto;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__redo_label" aria-hidden="false">取消復原</span><span id="cke_14_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+Y</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_15" class="cke_toolbar" aria-labelledby="cke_15_label" role="toolbar"><span id="cke_15_label" class="cke_voice_label">連結</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_16" class="cke_button cke_button__link cke_button_off" href="javascript:void(&#39;連結&#39;)" title="連結 (Ctrl+L)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-describedby="cke_16_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onclick="CKEDITOR.tools.callFunction(10,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -528px;background-size:auto;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__link_label" aria-hidden="false">連結</span><span id="cke_16_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+L</span></a><a id="cke_17" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void(&#39;取消連結&#39;)" title="取消連結" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-describedby="cke_17_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(11,event);" onfocus="return CKEDITOR.tools.callFunction(12,event);" onclick="CKEDITOR.tools.callFunction(13,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -552px;background-size:auto;">&nbsp;</span><span id="cke_17_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">取消連結</span><span id="cke_17_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_18" class="cke_toolbar cke_toolbar_last" aria-labelledby="cke_18_label" role="toolbar"><span id="cke_18_label" class="cke_voice_label">插入</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_19" class="cke_button cke_button__codesnippet cke_button_off" href="javascript:void(&#39;插入程式碼片段&#39;)" title="插入程式碼片段" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_19_label" aria-describedby="cke_19_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(14,event);" onfocus="return CKEDITOR.tools.callFunction(15,event);" onclick="CKEDITOR.tools.callFunction(16,this);return false;"><span class="cke_button_icon cke_button__codesnippet_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1080px;background-size:auto;">&nbsp;</span><span id="cke_19_label" class="cke_button_label cke_button__codesnippet_label" aria-hidden="false">插入程式碼片段</span><span id="cke_19_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_20" class="cke_button cke_button__code cke_button_off" href="javascript:void(&#39;Wrap code&#39;)" title="Wrap code" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-describedby="cke_20_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(17,event);" onfocus="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__code_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1056px;background-size:auto;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__code_label" aria-hidden="false">Wrap code</span><span id="cke_20_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 150px;"><span id="cke_24" class="cke_voice_label">按下 ALT 0 取得說明。</span><iframe src="./1.協作練習 - (1) 熟悉流程_files/saved_resource.html" frameborder="0" class="cke_wysiwyg_frame cke_reset" style="width: 100%; height: 100%;" title="RTF 編輯器, comment_content" aria-describedby="cke_24" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="調整大小" onmousedown="CKEDITOR.tools.callFunction(0, event)">◢</span></span></div></div></div>
+	<div id="dropzone" class="attachments-fields image-upload dropzone dz-clickable">
+		<i class="material-icons dz-clickable">photo</i>
+		<!--<button type="button" class="btn btn-default comment-format-help pull-right" data-container="body" data-toggle="popover" >-->
+		<!--Formatting Help-->
+		<!--</button>-->
+	<div class="dz-default dz-message"><span></span></div></div>
+</div>
+
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#comment_content').attachCkeditor()
+	})
+</script>
+
+								<div class="col-xs-12 text-right">
+									<input type="submit" name="commit" value="送出" class="btn btn-default btn btn-start">
+								</div>
+							</div>
+</form>						<div class="parent_comments_wrapper">
+							<div class="comment-block" id="comment-8497">
+	<div class="media">
+		<div class="pull-left">
+			<a href="https://lighthouse.alphacamp.co/user/abouts/720">
+				<img class="media-object" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_FB_IMG_1505626984817.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+					Bug
+</a>				<small>2018-01-28 09:42</small>
+				<small class="pull-right comment-index">
+					#1
+				</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8497">
+  <div class="comment-content">
+    <strong class="meida-heading">
+      <span class="tag aluminium">舉手發問</span>做好頁面開sever無法用chrome查看
+    </strong>
+		<div class="mt10"></div>
+		<p>如果是練習卡關，請提供</p>
+
+<p>1.你正準備做什麼功能？開sever用chrome查看index是否正常顯示user list</p>
+
+<p>2.剛剛完成哪個功能？設定user route, controller and index view</p>
+
+<p>3.你剛剛做了什麼步驟？如：ＸＸ檔案寫了或改了ＸＸＸ程式碼。</p>
+
+<p>Rails sever看log多兩段藍色程式碼，網頁一直開不起來</p>
+
+<p>4.錯誤訊息是什麼？(畫面截圖)</p>
+  </div>
+  <div class="comment-images">
+    <div class="comment-image dz-preview dz-processing dz-image-preview dz-success dz-complete" data-attachment-id="1661">
+  <a class="attachment-image-link" href="https://assets-lighthouse.s3.amazonaws.com/uploads/attachment/attachment/1661/medium_20180128_093523_mh1517114536223.jpg">
+    <img class="attachment-image" src="./1.協作練習 - (1) 熟悉流程_files/thumb_20180128_093523_mh1517114536223.jpg" alt="Thumb 20180128 093523 mh1517114536223">
+</a></div>
+
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8497/upvote"><span class="upvotes-count">0 推</span></a>
+			<i class="fa fa-circle small"></i>
+			<a data-subscribable-id="8497" data-subscribable-type="Comment" data-remote="true" rel="nofollow" data-method="POST" href="https://lighthouse.alphacamp.co/user/subscriptions?subscription%5Bsubscribable_id%5D=8497&amp;subscription%5Bsubscribable_type%5D=Comment">4 追蹤</a>
+
+			<i class="fa fa-circle small"></i>
+			<span class="reply-count">
+				6 回覆
+			</span>
+			<i class="material-icons expand-btn">expand_more</i>
+		</h6>
+	</div>
+	<div class="child-comment-wrapper hide">
+		<div class="sticky-line">
+				<div class="child-comment" id="comment-8498">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/304">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb__.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/304">
+					Yass
+</a>				<small>2018-01-28 10:41</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8498">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p>好像沒有顯示截圖ＸＤ</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8498/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+<div class="child-comment" id="comment-8503">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_FB_IMG_1505626984817.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+					Bug
+</a>				<small>2018-01-28 12:39</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8503">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p>手機翻拍的原始圖片太大系統不給上傳，縮小檔案再上傳了orz</p>
+
+<p>&nbsp;</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8503/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+<div class="child-comment" id="comment-8505">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/304">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb__.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/304">
+					Yass
+</a>				<small>2018-01-28 13:48</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8505">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p>有重新載入資料庫設定(db:migrate)跟seed嗎?</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8505/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+<div class="child-comment" id="comment-8506">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_FB_IMG_1505626984817.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+					Bug
+</a>				<small>2018-01-28 13:58</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8506">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p>有，拉下來就先</p>
+
+<p>Bundle install</p>
+
+<p>Rails db: migrate</p>
+
+<p>Rails db:seed</p>
+
+<p>Git checkout feature/user_index</p>
+
+<p>&nbsp;</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8506/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+<div class="child-comment" id="comment-8578">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/942">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_111.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/942">
+					<span class="fa-stack fa-lg user-role-icon" data-title="TA"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-star fa-stack-1x fa-inverse"></i></span><span class="comment-user-name" data-title="TA">Bruce Lin</span>
+</a>				<small>2018-01-30 01:32</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8578">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p><span class="atwho-inserted"><span class="mentioned_name" data-mentioned-id="720">@Bug</span></span>&nbsp;先試試看用bundle exec rails s</p>
+
+<p>這樣的話連得上嗎？</p>
+
+<p>&nbsp;</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8578/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+<div class="child-comment" id="comment-8651">
+	<div class="media">
+		<div class="pull-left">
+			<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+				<img class="media-object img-responsive user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_FB_IMG_1505626984817.jpg">
+</a>		</div>
+		<div class="media-body">
+			<h4 class="media-heading">
+				<a class="black" href="https://lighthouse.alphacamp.co/user/abouts/720">
+					Bug
+</a>				<small>2018-01-31 13:03</small>
+			</h4>
+			<div class="comment-content-wrapper" data-comment-id="8651">
+  <div class="comment-content">
+		<div class="mt10"></div>
+		<p>好像是虛擬機開太久卡住當機....</p>
+
+<p>重開機之後，因為伺服器不正常關閉，刪除tmp/pids裡面的檔案，</p>
+
+<p>就可以正常運行了</p>
+  </div>
+  <div class="comment-images">
+    
+  </div>
+</div>
+
+		</div>
+	</div>
+	<div class="comment-manipulation-wrapper">
+		<h6>
+			<a class="thumb-link" data-remote="true" rel="nofollow" data-method="PUT" href="https://lighthouse.alphacamp.co/comments/8651/upvote"><span class="upvotes-count">0 推</span></a>
+		</h6>
+	</div>
+</div>
+
+		</div>
+		<form class="simple_form form-horizontal child-comment-form child-comment-8497" role="form" novalidate="novalidate" id="new_comment" data-remote="true" action="https://lighthouse.alphacamp.co/comments/8497/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="6bwLTPrZgxuNDp4M2/TgZcw+lE0YL3hmOdtyK8cQ0gQgO9GlVoL9s/XOlSA2AZoWL/UJqt21B/WrslKqxsTW4Q==">
+			<div class="form-group">
+	<div class="col-xs-1">
+		<img class="user-photo" alt="User Avatar" src="./1.協作練習 - (1) 熟悉流程_files/thumb_S__20054025.jpg">
+	</div>
+	<div class="col-xs-10">
+		<textarea class="form-control" id="child_comment_content_8497" name="comment[content]" style="visibility: hidden; display: none;"></textarea><div id="cke_child_comment_content_8497" class="cke_2 cke cke_reset cke_chrome cke_editor_child_comment_content_8497 cke_ltr cke_browser_webkit" dir="ltr" lang="zh" role="application" aria-labelledby="cke_child_comment_content_8497_arialbl"><span id="cke_child_comment_content_8497_arialbl" class="cke_voice_label">RTF 編輯器, child_comment_content_8497</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_2_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; user-select: none;"><span id="cke_30" class="cke_voice_label">編輯器工具列</span><span id="cke_2_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_30" onmousedown="return false;"><span id="cke_31" class="cke_toolbar" aria-labelledby="cke_31_label" role="toolbar"><span id="cke_31_label" class="cke_voice_label">undo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_32" class="cke_button cke_button__undo cke_button_disabled " href="javascript:void(&#39;復原&#39;)" title="復原 (Ctrl+Z)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" aria-describedby="cke_32_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(23,event);" onfocus="return CKEDITOR.tools.callFunction(24,event);" onclick="CKEDITOR.tools.callFunction(25,this);return false;"><span class="cke_button_icon cke_button__undo_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_32_label" class="cke_button_label cke_button__undo_label" aria-hidden="false">復原</span><span id="cke_32_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+Z</span></a><a id="cke_33" class="cke_button cke_button__redo cke_button_disabled " href="javascript:void(&#39;取消復原&#39;)" title="取消復原 (Ctrl+Y)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-describedby="cke_33_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(26,event);" onfocus="return CKEDITOR.tools.callFunction(27,event);" onclick="CKEDITOR.tools.callFunction(28,this);return false;"><span class="cke_button_icon cke_button__redo_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -960px;background-size:auto;">&nbsp;</span><span id="cke_33_label" class="cke_button_label cke_button__redo_label" aria-hidden="false">取消復原</span><span id="cke_33_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+Y</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_34" class="cke_toolbar" aria-labelledby="cke_34_label" role="toolbar"><span id="cke_34_label" class="cke_voice_label">連結</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_35" class="cke_button cke_button__link cke_button_off" href="javascript:void(&#39;連結&#39;)" title="連結 (Ctrl+L)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_35_label" aria-describedby="cke_35_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(29,event);" onfocus="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -528px;background-size:auto;">&nbsp;</span><span id="cke_35_label" class="cke_button_label cke_button__link_label" aria-hidden="false">連結</span><span id="cke_35_description" class="cke_button_label" aria-hidden="false">鍵盤快捷鍵 Ctrl+L</span></a><a id="cke_36" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void(&#39;取消連結&#39;)" title="取消連結" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" aria-describedby="cke_36_description" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onclick="CKEDITOR.tools.callFunction(34,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -552px;background-size:auto;">&nbsp;</span><span id="cke_36_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">取消連結</span><span id="cke_36_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_37" class="cke_toolbar cke_toolbar_last" aria-labelledby="cke_37_label" role="toolbar"><span id="cke_37_label" class="cke_voice_label">插入</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_38" class="cke_button cke_button__codesnippet cke_button_off" href="javascript:void(&#39;插入程式碼片段&#39;)" title="插入程式碼片段" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" aria-describedby="cke_38_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(35,event);" onfocus="return CKEDITOR.tools.callFunction(36,event);" onclick="CKEDITOR.tools.callFunction(37,this);return false;"><span class="cke_button_icon cke_button__codesnippet_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1080px;background-size:auto;">&nbsp;</span><span id="cke_38_label" class="cke_button_label cke_button__codesnippet_label" aria-hidden="false">插入程式碼片段</span><span id="cke_38_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_39" class="cke_button cke_button__code cke_button_off" href="javascript:void(&#39;Wrap code&#39;)" title="Wrap code" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_39_label" aria-describedby="cke_39_description" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(38,event);" onfocus="return CKEDITOR.tools.callFunction(39,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span class="cke_button_icon cke_button__code_icon" style="background-image:url(&#39;https://lighthouse.alphacamp.co/ckeditor/plugins/icons.png?t=HBDD&#39;);background-position:0 -1056px;background-size:auto;">&nbsp;</span><span id="cke_39_label" class="cke_button_label cke_button__code_label" aria-hidden="false">Wrap code</span><span id="cke_39_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_2_contents" class="cke_contents cke_reset" role="presentation" style="height: 150px;"><span id="cke_43" class="cke_voice_label">按下 ALT 0 取得說明。</span><iframe src="./1.協作練習 - (1) 熟悉流程_files/saved_resource(1).html" frameborder="0" class="cke_wysiwyg_frame cke_reset" style="width: 100%; height: 100%;" title="RTF 編輯器, child_comment_content_8497" aria-describedby="cke_43" tabindex="0" allowtransparency="true"></iframe></div><span id="cke_2_bottom" class="cke_bottom cke_reset_all" role="presentation" style="user-select: none;"><span id="cke_2_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="調整大小" onmousedown="CKEDITOR.tools.callFunction(21, event)">◢</span></span></div></div>
+		<div class="attachments-fields image-upload dropzone dz-clickable">
+			<i class="material-icons dz-clickable">photo</i>
+			<!--<button type="button" class="btn btn-default comment-format-help pull-right" data-container="body" data-toggle="popover" >-->
+			<!--Formatting Help-->
+			<!--</button>-->
+		<div class="dz-default dz-message"><span></span></div></div>
+	</div>
+	<div class="col-xs-1 col-xs-offset-10">
+		<input type="submit" name="commit" value="送出" class="btn btn-start pull-right">
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#child_comment_content_8497').attachCkeditor()
+
+	})
+</script>
+
+</form>	</div>
+</div>
+<script>
+	$(function () {
+		var form_class = '.child-comment-8497'
+		var dropzone_element = $(form_class + ' .dropzone');
+		var attach_element = $(form_class);
+		init_dropzone(dropzone_element, attach_element);
+
+		$('.child-comment-8497').validate({
+			rules: {
+				"comment[content]": {
+					required: true
+				}
+			}
+		});
+	});
+</script>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="unit-finish-reading-prompt">
+  恭喜！如果完成本單元的學習，請在左側欄 <i class="fa fa-square-o"> </i> 中打勾；若要標示重點，請點選 <i class="material-icons">turned_in_not</i> 來新增書籤
+</div>
+
+
+    </div>
+    <div class="wrapper">
+		<div class="append-width active"></div>
+	<div class="container-fluid">
+		<div class="text-center acfooter">
+			Copyright © 2018
+			<a target="_blank" href="https://tw.alphacamp.co/">ALPHA CAMP ACADEMY PTE. LTD.</a> ｜
+			Privacy Policy ｜ <a href="https://docs.google.com/document/d/1dzKg8ODaL8ra3ALhv5BBnGY0alTz8-at0wl8XfygwlU/edit?usp=sharing">Terms of Service</a><a> ｜
+			</a><a href="mailto:info@alphacamp.co">Contact Us</a> |
+
+				繁體中文
+		</div>
+	</div>
+</div>
+
+		
+    <script async="" src="./1.協作練習 - (1) 熟悉流程_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-44443675-11', {
+    'page_path': "/lessons/227/units/1074"
+  });
+
+  $(function() {
+    $(document).on('click', '[data-analytics]', function() {
+      var data_action = $(this).data('ga-action')
+      var data_category = $(this).data('ga-category')
+      var data_label = $(this).data('ga-label')
+      gtag('event', data_action, {
+        'event_category': data_category,
+        'event_label': data_label
+      });
+    });
+  })
+</script>
+
+
+    
+  <script type="text/javascript">
+    showMenuButton();
+  </script>
+
+	<script>
+	function init_dropzone(dropzone_element, attach_element){
+    Dropzone.autoDiscover = false;
+    dropzone_element.dropzone({
+      url: "/attachments",
+      autoDiscover: false,
+			addRemoveLinks: true,
+			clickable: [dropzone_element[0], dropzone_element.children()[0]],
+      method: "post",
+      maxFilesize: 4,
+      dictDefaultMessage: "",
+      headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+      },
+      init: function() {
+        this.on("success", function(file, response) {
+          var $_removeLink = $(file['_removeLink']);
+          var $hidden = $('<input type="hidden" name="comment[attachment_ids][]">').val(response.id).attr('id', 'new_comment_attachment_'+response.id);
+          attach_element.append($hidden);
+          $_removeLink.data('photo-id', response.id)
+				});
+        this.on("addedfile", function(file) {
+          //console.log("Added file.", file);
+        });
+        this.on("removedfile", function(file) {
+          var $_removeLink = $(file['_removeLink']);
+          var id = $_removeLink.data('photo-id');
+          if (id == undefined) return;
+          $('#new_comment_attachment_' + id).remove()
+          $.ajax({
+            url: "/attachments/" + id,
+            method: "delete",
+            success: function(response){
+              console.log("Delete successfully");
+            }
+          });
+        });
+      }
+    });
+  }
+</script>
+
+	<script tpye="text/javascript">
+	function formInitialize(form){
+		var dropzoneElement = $(form).find("div.dropzone")[0]
+		var dropzoneObject = Dropzone.forElement(dropzoneElement);
+		for(var i in dropzoneObject.files) {
+			var file = dropzoneObject.files[i]
+			var $_removeLink = $(file['_removeLink']);
+			$_removeLink.removeData('photo-id')
+		}
+		form.reset()
+		$(form).find("input[type=hidden][name='comment[attachment_ids][]']").remove()
+		dropzoneObject.removeAllFiles();
+	}
+	function openChildComment($parentElem, isOpen, timeInterval){
+		var $expand_btn = $parentElem.find(".expand-btn");
+		var $child_wrapper = $parentElem.find(".child-comment-wrapper");
+		if(isOpen){
+			$expand_btn.removeClass("expand");
+			$expand_btn.html("expand_more");
+			$child_wrapper.addClass("hide");
+			$child_wrapper.show().fadeOut(timeInterval);
+		}else{
+			$expand_btn.addClass("expand");
+			$expand_btn.html("expand_less");
+			$child_wrapper.removeClass("hide");
+			$child_wrapper.hide().fadeIn(timeInterval);
+		}
+	}
+	function hashChangeScroll() {
+		var $elem = $('#' + window.location.hash.replace('#', ''));
+		if ($elem.length > 0) {
+			if($elem.hasClass("comment-block")){
+				openChildComment($elem, false, 0)
+			}else{
+				openChildComment($elem.parents(".comment-block"), false, 0)
+			}
+			setTimeout(function() {
+				$("html, body").animate({
+					scrollTop: ($elem.offset().top - $('nav').height())
+				}, 3000);
+			},1000)
+		}
+	}
+	$(function() {
+		$(document).on('change','.comment_thread select', function(e){
+			var $textarea = $(e.target).parents('form').find('textarea')
+			var editor = CKEDITOR.instances[$textarea.attr('id')]
+			if (e.target.value !== 'ask' && editor.getData() == '' ){
+				editor.setData('')
+			}
+		})
+
+		var dropzone_element = $("div#dropzone");
+		var attach_element = $('#new_comment')
+		init_dropzone(dropzone_element, attach_element);
+
+		$(".comment-form").validate({
+			ignore: [],
+			rules: {
+				"comment[title]": {
+					required: true
+				},
+				"comment[content]": {
+					required: true
+				},
+				cktext:{
+					required: function() {
+						CKEDITOR.instances.cktext.updateElement();
+					},
+					minlength:1
+				}
+			},
+			messages:
+				{
+					cktext:{
+						required:"Please enter Text",
+						minlength:"Please enter 1 characters"
+					}
+				}
+		});
+
+		var $elem = $('#' + window.location.hash.replace('#', ''));
+		if ($elem.length > 0) {
+			hashChangeScroll();
+		}
+
+		$(window).on('hashchange', function() {
+			hashChangeScroll();
+		});
+
+		$(document).bind('mousewheel', function(){
+			$("html, body").stop()
+		});
+
+		$(document).on('ajax:success', ".simple_form", function () {
+			var self = this;
+			var form = this
+			formInitialize(form)
+		});
+
+		$(document).on("click", ".expand-btn", function() {
+			var $parentElem = $(this).parents(".comment-block");
+			if($(this).hasClass("expand")){
+				openChildComment($parentElem, true, 100)
+			}else{
+				openChildComment($parentElem, false, 300)
+			}
+		})
+
+		$('body').popover({
+			html : true,
+	    title: "Formatting Help",
+	    placement: "top",
+	    selector: '.comment-format-help',
+	    content: '<ol class=\'comment-pop-over\'>\n      <li>> prefomatted<\/li>\n      <blockquote><p>preformatted<\/p><\/blockquote>\n      <hr>\n      <li>`code`<\/li>\n      <code>code<\/code>\n      <hr>\n      <li>[Lighthouse] (https://lighthouse.alphacamp.co)<\/li>\n      <a href=\'https://lighthouse.alphacamp.co\'>Lighthouse<\/a>\n    <\/ol>'
+		});
+
+		$(document).on('click', function (e) {
+	    $('[data-toggle="popover"],[data-original-title]').each(function () {
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+        }
+	    });
+		});
+	})
+</script>
+
+	<script tpye="text/javascript">
+		$(function() {
+			$(".attachment-image-link").fancybox();
+			$(document).on('click', 'button.answer-quiz', function () {
+				var type = $(this).attr('data-type');
+				var url = $(this).attr('data-url');
+				var value = [];
+				var $selected_radio_button = $(this).parents('.quiz').find("input[type='radio']:checked");
+				var $selected_checkboxs = $(this).parents('.quiz').find("input[type='checkbox']:checked");
+
+				if (type === "checkbox") {
+					$selected_checkboxs.map(function () {
+						value.push($(this).val());
+					});
+				} else if (type === "radio-button") {
+					var checked = $selected_radio_button.val();
+					value.push(checked);
+				}
+
+				if (value.length === 0) return;
+
+				$.ajax({
+					url: url,
+					type: "get",
+					data: {
+						answer: value
+					}
+				});
+			});
+    });
+    var unitFinishReading = false;
+    $(window).scroll(function() {
+      var divider_to_top = $('.js-detect-scroll-bottom').offset().top,
+          divider_height = $('.js-detect-scroll-bottom').outerHeight(),
+          window_height = $(window).height(),
+          scroll_height = $(this).scrollTop();
+      if ( $(window).scrollTop() + $(window).height() == $(document).height() ){
+        if ( unitFinishReading  )
+          $('.unit-finish-reading-prompt').fadeOut('fast');
+        unitFinishReading = false;
+      }
+      else if (
+        // 如果滾動到內容結束
+        scroll_height > ( divider_to_top + divider_height - window_height ) && 
+        ( divider_to_top > scroll_height ) ){
+        if( !unitFinishReading ){
+          $('.unit-finish-reading-prompt').fadeIn('fast').css({display: 'flex', 'align-items': 'center', 'justify-content': 'center'});
+        }
+        unitFinishReading = true;
+      }
+      else{
+        // 如果內容結束處離開視野（整頁都留言版或內容中間）
+        if ( unitFinishReading  )
+          $('.unit-finish-reading-prompt').fadeOut('fast');
+        unitFinishReading = false;
+      }
+    });
+	</script>
+
+	<script tpye="text/javascript">
+		$(function() {
+      $(".search-bar .clear-btn").click(function() {
+        $(".search-bar .search-input").val("")
+        return false;
+      });
+			// when opening the sidebar
+			$('#sidebarCollapse').on('click', function () {
+				// open sidebar
+				$('#sidebar').toggleClass('active');
+				$('.append-width').toggleClass('active');
+			});
+
+
+			// if dismiss or overlay was clicked
+			$('.close-menu').on('click', function () {
+				// hide the sidebar
+				$('#sidebar').removeClass('active');
+				$('.append-width').removeClass('active');
+			});
+		});
+	</script>
+
+  
+
+<input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><div class="atwho-container"><div id="atwho-ground-28a9976e1535769950767"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div></div><div class="atwho-container"><div id="atwho-ground-a82dbe311535769950771"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div></div><div id="rememberry__extension__root" style="all: unset;"></div></body></html>
